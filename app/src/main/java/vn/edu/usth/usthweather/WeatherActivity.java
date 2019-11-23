@@ -49,12 +49,9 @@ public class WeatherActivity extends AppCompatActivity {
         setContentView(R.layout.activity_weather);
         Log.i("cmt:","onCreate method");
 
-        // Create a new Fragment to be placed in the activity layout
-       ForecastFragment firstFragment= new ForecastFragment();
-
-       // Add the fragment to the 'container' FrameLayout
+       ForecastFragment t= new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(
-                R.id.container, firstFragment).commit();
+                R.id.container, t).commit();
 
     }
 }

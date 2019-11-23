@@ -1,36 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_column="10"
+    android:layout_columnSpan="20"
+    android:layout_gravity="end"
+    android:layout_margin="15sp"
+    android:layout_span="20"
+    android:background="#898f8f"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
     tools:context=".ForecastFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
-        android:id="@+id/LinearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="49dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/Thursday"
-            android:textSize="26sp" />
+    android:layout_width="match_parent"
+    android:layout_height="82.5sp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:width="100sp"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="@string/Mon"
+        android:textAllCaps="false"
+        android:textColor="#d3e0e0"
+        android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:contentDescription="@string/weather_icon"
-            android:src="@drawable/weather"
-            tools:visibility="visible" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/clear" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Clear"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82.5sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="100sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Tue"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/hazy" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Hazzy"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82.5sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="100sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Wed"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/flurries" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Flurries"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82.5sp"
+        android:orientation="horizontal" >
+
+    <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="100sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Thu"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Rain"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
-</FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82.5sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="100sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Fri"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/thunderstorms" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Thunderstorms"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82.5sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="100sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Sat"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/snow" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Snow"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82.5sp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="100sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/Sun"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/partlycloudy" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:width="150sp"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="@string/PartlyCloudy"
+            android:textAllCaps="false"
+            android:textColor="#d3e0e0"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+

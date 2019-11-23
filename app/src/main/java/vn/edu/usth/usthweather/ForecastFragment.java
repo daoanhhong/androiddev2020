@@ -33,7 +33,7 @@ public class ForecastFragment extends Fragment {
 
         //TextView
 
-        TextView textView = new TextView(getActivity());
+        /*TextView textView = new TextView(getActivity());
         textView.setText("Thursday");
         textView.setTextSize(26);
         textView.setGravity(View.TEXT_ALIGNMENT_CENTER);
@@ -41,13 +41,13 @@ public class ForecastFragment extends Fragment {
         // imageView
         ImageView icon = new ImageView(getActivity());
         icon.setImageResource(R.drawable.weather);
-        icon.setScaleType(ImageView.ScaleType.CENTER);
+        icon.setScaleType(ImageView.ScaleType.CENTER);*/
 
         View view = inflater.inflate(R.layout.fragment_forecast, container,  false);
 
-        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.LinearLayout);
+       /* LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.LinearLayout);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
-
+*/
         return view;
         }
 
